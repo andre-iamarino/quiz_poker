@@ -5,6 +5,7 @@ fetch('dados/dados.json')
     .then(response => response.json())
     .then(data => {
         // Preencher o array de perguntas com os dados do JSON
+        console.log("passou1");
         data.forEach(item => {
             perguntas.push({
                 pergunta: item.pergunta,
@@ -17,8 +18,10 @@ fetch('dados/dados.json')
         });
 
         // Aqui você pode realizar qualquer ação que dependa do preenchimento do array perguntas
-        console.log(perguntas); // Exemplo: exibir o array preenchido
+        console.log("carregou " + perguntas); // Exemplo: exibir o array preenchido
+        console.log("passou2");
         embaralharPerguntas();
+        console.log("passou3");
     })
     .catch(error => {
         console.error('Erro ao carregar o arquivo JSON:', error);
@@ -26,18 +29,21 @@ fetch('dados/dados.json')
 
 
 function embaralharPerguntas() {
-    for (let i = perguntas.length - 1; i > 0; i--) {
+  console.log("passou4");  
+  for (let i = perguntas.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [perguntas[i], perguntas[j]] = [perguntas[j], perguntas[i]];
     }
+    console.log("passou5");
     exibirPergunta();
+    console.log("passou6");
   }
 
 let perguntaAtual = 0;
 let pontuacao = 0;
 
 function exibirPergunta() {
-  
+  console.log("passou7");
   const questao = perguntas[perguntaAtual];
   document.getElementById('question').textContent = questao.pergunta;
   const opcoesHTML = document.getElementById('options').getElementsByTagName('button');
@@ -60,6 +66,7 @@ function exibirPergunta() {
 }
 
 function responder(opcao) {
+  console.log("passou8");
     const questao = perguntas[perguntaAtual];
     const feedback = document.getElementById('feedback');
     const feedback1 = document.getElementById('feedback1');
