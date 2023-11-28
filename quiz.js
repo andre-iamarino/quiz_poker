@@ -52,6 +52,7 @@ function embaralharPerguntas() {
       const j = Math.floor(Math.random() * (i + 1));
       [perguntas[i], perguntas[j]] = [perguntas[j], perguntas[i]];
     }
+    exibirPergunta();
   }
 
 let perguntaAtual = 0;
@@ -152,4 +153,3 @@ function proximaQuestao() {
 }
 
 embaralharPerguntas();
-exibirPergunta();
