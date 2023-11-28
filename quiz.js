@@ -18,6 +18,7 @@ fetch('dados/dados.json')
 
         // Aqui você pode realizar qualquer ação que dependa do preenchimento do array perguntas
         console.log(perguntas); // Exemplo: exibir o array preenchido
+        embaralharPerguntas();
     })
     .catch(error => {
         console.error('Erro ao carregar o arquivo JSON:', error);
@@ -129,4 +130,4 @@ function proximaQuestao() {
   }
 }
 
-embaralharPerguntas();
+
