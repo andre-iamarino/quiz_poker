@@ -93,9 +93,9 @@ function responder(opcao) {
       feedback.style.borderRadius = "5px"; 
       feedback.style.color = "white";
       feedback2.style.color = 'gray';
-      document.getElementById('feedback').style.display = 'block';
+      document.getElementById('feedback').style.display = 'grid';
       document.getElementById('feedback1').style.display = 'none';
-      document.getElementById('feedback2').style.display = 'block';
+      document.getElementById('feedback2').style.display = 'grid';
       pontuacao++;
     } else {
       feedback.textContent = `Resposta errada!`;
@@ -105,12 +105,12 @@ function responder(opcao) {
       feedback.style.padding = "10px";
       feedback.style.borderRadius = "5px"; 
       feedback.style.color = "white";
-      document.getElementById('feedback').style.display = 'block';
-      document.getElementById('feedback1').style.display = 'block';
-      document.getElementById('feedback2').style.display = 'block';
+      document.getElementById('feedback').style.display = 'grid';
+      document.getElementById('feedback1').style.display = 'grid';
+      document.getElementById('feedback2').style.display = 'grid';
     }
     document.getElementById('labelInfomativo').style.display = 'none';
-    document.getElementById('next').style.display = 'block';
+    document.getElementById('next').style.display = 'grid';
     document.getElementById('options').style.display = 'none';
 }
 
