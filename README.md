@@ -1,2 +1,2 @@
-# quiz_poker
- 
+# Quiz sobre pooker 
+ Perguntas para melhor o seu jogo de poker
