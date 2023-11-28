@@ -1,0 +1,38 @@
+[
+    {
+        "pergunta": "No flop XYZ com a mão ABCDE, o que você faz(1)?",
+        "flop": [
+            "url_imagem_1",
+            "url_imagem_2",
+            "url_imagem_3"
+        ],
+        "mao": [
+            "url_imagem_4",
+            "url_imagem_5",
+            "url_imagem_6",
+            "url_imagem_7",
+            "url_imagem_8"
+        ],
+        "opcoes": ["BET", "1", "1"],
+        "respostaCorreta": 1,
+        "explicacao": "Fold, pq bla bla bla"
+    },
+    {
+        "pergunta": "No flop XYZ com a mão ABCDE, o que você faz(12)?",
+        "flop": [
+            "url_imagem_1",
+            "url_imagem_2",
+            "url_imagem_3"
+        ],
+        "mao": [
+            "url_imagem_4",
+            "url_imagem_5",
+            "url_imagem_6",
+            "url_imagem_7",
+            "url_imagem_8"
+        ],
+        "opcoes": ["BET", "2", "2"],
+        "respostaCorreta": 1,
+        "explicacao": "Fold, pq bla bla bla"
+    }
+]
