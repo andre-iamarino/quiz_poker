@@ -58,7 +58,7 @@ let perguntaAtual = 0;
 let pontuacao = 0;
 
 function exibirPergunta() {
-  embaralharPerguntas();
+  
   const questao = perguntas[perguntaAtual];
   document.getElementById('question').textContent = questao.pergunta;
   const opcoesHTML = document.getElementById('options').getElementsByTagName('button');
@@ -151,5 +151,5 @@ function proximaQuestao() {
   }
 }
 
-
+embaralharPerguntas();
 exibirPergunta();
