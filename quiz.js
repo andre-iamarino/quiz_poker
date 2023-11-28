@@ -1,10 +1,9 @@
 
-const perguntas = []; // Array vazio para armazenar as perguntas
+const perguntas = []; 
 
 fetch('dados/dados.json')
     .then(response => response.json())
     .then(data => {
-        // Preencher o array de perguntas com os dados do JSON
         console.log("passou1");
         data.forEach(item => {
             perguntas.push({
@@ -16,9 +15,7 @@ fetch('dados/dados.json')
                 explicacao: item.explicacao
             });
         });
-
-        // Aqui você pode realizar qualquer ação que dependa do preenchimento do array perguntas
-        console.log("carregou " + perguntas); // Exemplo: exibir o array preenchido
+        console.log("carregou " + perguntas); 
         console.log("passou2");
         embaralharPerguntas();
         console.log("passou3");
@@ -60,9 +57,6 @@ function exibirPergunta() {
   for (let i = 0; i < maoImgHTML.length; i++) {
     maoImgHTML[i].src = questao.mao[i];
   }
-
- 
-
 }
 
 function responder(opcao) {
