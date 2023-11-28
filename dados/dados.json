@@ -2,16 +2,16 @@
     {
         "pergunta": "No flop XYZ com a mão ABCDE, o que você faz(1)?",
         "flop": [
-            "url_imagem_1",
-            "url_imagem_2",
-            "url_imagem_3"
+            "https://previews.123rf.com/images/saranai/saranai1507/saranai150700007/43144739-jack-of-hearts-playing-card-vector-illustration.jpg",
+            "https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg",
+            "https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg"
         ],
         "mao": [
-            "url_imagem_4",
-            "url_imagem_5",
-            "url_imagem_6",
-            "url_imagem_7",
-            "url_imagem_8"
+            "https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg",
+            "https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg",
+            "https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg",
+            "https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg",
+            "https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg"
         ],
         "opcoes": ["BET", "1", "1"],
         "respostaCorreta": 1,
@@ -20,16 +20,16 @@
     {
         "pergunta": "No flop XYZ com a mão ABCDE, o que você faz(12)?",
         "flop": [
-            "url_imagem_1",
-            "url_imagem_2",
-            "url_imagem_3"
+            "https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg",
+            "https://previews.123rf.com/images/saranai/saranai1507/saranai150700007/43144739-jack-of-hearts-playing-card-vector-illustration.jpg",
+            "https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg"
         ],
         "mao": [
-            "url_imagem_4",
-            "url_imagem_5",
-            "url_imagem_6",
-            "url_imagem_7",
-            "url_imagem_8"
+            "https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg",
+            "https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg",
+            "https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg",
+            "https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg",
+            "https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg"
         ],
         "opcoes": ["BET", "2", "2"],
         "respostaCorreta": 1,

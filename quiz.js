@@ -1,50 +1,27 @@
-const perguntas = [
-    {
-      pergunta: 'No flop XYZ com a mão ABCDE, o que você faz(1)?',
-      flop: 
-        ['https://previews.123rf.com/images/saranai/saranai1507/saranai150700007/43144739-jack-of-hearts-playing-card-vector-illustration.jpg',
-        'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-        'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg'],
-      mao: 
-        ['https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-        'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-        'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-        'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-        'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg'],
-      opcoes: ['BET', 'FOLD','FUJA'],
-      respostaCorreta: 1,
-      explicacao: 'Fold, pq bla bla bla'
-    },
-    {
-        pergunta: 'No flop XYZ com a mão ABCDE, o que você faz(2)?',
-        flop: 
-            ['https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-        'https://previews.123rf.com/images/saranai/saranai1507/saranai150700007/43144739-jack-of-hearts-playing-card-vector-illustration.jpg',
-        'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg'],
-        mao: ['https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-      'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-      'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-      'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-      'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg'],
-      opcoes: ['BET', 'FOLD','FUJA'],
-        respostaCorreta: 1,
-        explicacao: 'Fold, pq bla bla bla'
-    },
-    {
-        pergunta: 'No flop XYZ com a mão ABCDE, o que você faz(3)?',
-        flop: ['https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-        'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-        'https://previews.123rf.com/images/saranai/saranai1507/saranai150700007/43144739-jack-of-hearts-playing-card-vector-illustration.jpg'],
-        mao: ['https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-      'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-      'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-      'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg',
-      'https://previews.123rf.com/images/mannaggia/mannaggia1401/mannaggia140100020/25456241-ace-of-spade-playing-card.jpg'],
-      opcoes: ['BET', 'FOLD','FUJA'],
-        respostaCorreta: 1,
-        explicacao: 'Fold, pq bla bla bla'
-    }
-  ];
+
+const perguntas = []; // Array vazio para armazenar as perguntas
+
+fetch('dados/dados.json')
+    .then(response => response.json())
+    .then(data => {
+        // Preencher o array de perguntas com os dados do JSON
+        data.forEach(item => {
+            perguntas.push({
+                pergunta: item.pergunta,
+                flop: item.flop,
+                mao: item.mao,
+                opcoes: item.opcoes,
+                respostaCorreta: item.respostaCorreta,
+                explicacao: item.explicacao
+            });
+        });
+
+        // Aqui você pode realizar qualquer ação que dependa do preenchimento do array perguntas
+        console.log(perguntas); // Exemplo: exibir o array preenchido
+    })
+    .catch(error => {
+        console.error('Erro ao carregar o arquivo JSON:', error);
+    });
 
 
 function embaralharPerguntas() {
