@@ -142,8 +142,8 @@ function proximaQuestao() {
     document.getElementById('feedback1').style.display = 'none';
     document.getElementById('feedback2').style.display = 'none';
     document.getElementById('next').style.display = 'none';
-    document.getElementById('options').style.display = 'block';
-    document.getElementById('labelInfomativo').style.display = 'block';
+    document.getElementById('options').style.display = 'grid';
+    document.getElementById('labelInfomativo').style.display = 'grid';
   } else {
     const quiz = document.getElementById('quiz');
     quiz.innerHTML = `<div style="background: #000000d1;width: auto;font-size: 45px;padding: 25px;margin-top: 18%;margin-left: auto;margin-right: auto;width: 39%;border-radius: 13px;font-weight: 800;color: white;"><h2>Acabou mane!</h2>
