@@ -7,7 +7,74 @@
   <title>POKER PLO5</title>
 </head>
 <body>
-    <div id="quiz">
+
+  <div id="quiz">
+    <div class="grid-container">
+          
+      <div class="grid-item"></div>
+      <div class="grid-item">
+        <div class="avatar" style="margin-top: -120px;"></div>
+      </div>
+      <div class="grid-item"></div>  
+      <div class="grid-item">
+        <div class="avatar" style="margin-left: -120px;"></div>
+      </div>
+      <div class="grid-item">
+        <p id="question" style="margin-bottom: 20px;" class="text-2xl text-gray-900"></p>
+        <div id="options" class="grid grid-cols-4 gap-4">
+          <button onclick="responder(0)" class="group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 cursor-pointer bg-white text-gray-900 shadow-sm">Add to bag1</button>
+          <button onclick="responder(1)" class="group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 cursor-pointer bg-white text-gray-900 shadow-sm">Add to bag1</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="avatar" style="margin-right: -120px;"></div>
+      </div>  
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>  
+      <div class="grid-item"></div>
+      <div class="grid-item">
+        <div id="flop" style="display: flex;" class="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg  sm:col-span-4 lg:col-span-5">
+          <img src="" width="100" height="300">
+          <img src="" width="100" height="300">
+          <img src="" width="100" height="300">
+        </div>
+      </div></div>
+      <div class="grid-item"></div> 
+      <div class="grid-item">
+        <div class="avatar" style="margin-left: -120px;"></div>
+      </div> 
+      <div class="grid-item"></div>
+      <div class="grid-item">
+        <div class="avatar" style="margin-right: -120px;"></div>
+      </div> 
+      <div class="grid-item"></div> 
+      <div class="grid-item"></div>
+      <div class="grid-item"></div> 
+      <div class="grid-item"></div> 
+      <div class="grid-item">
+        <div class="avatar" style="margin-bottom: -120px;"></div>
+      </div> 
+      <div class="grid-item">
+        <div id="mao" style="display: flex;" class="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg  sm:col-span-4 lg:col-span-5">
+          <img src="" width="100" height="300">
+          <img src="" width="100" height="300">
+          <img src="" width="100" height="300">
+          <img src="" width="100" height="300">
+          <img src="" width="100" height="300">
+        </div>
+      </div> 
+    </div>
+    <div id="linha"></div>
+  </div>
+  
+
+
+
+
+
+
+    <div id="quiz1">
     <div class="flex w-full transform text-left text-base transition md:my-8 md:max-w-2xl md:px-4 lg:max-w-4xl" style="margin-left: auto;margin-right: auto;">
       <div class="relative flex w-full items-center overflow-hidden bg-white px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8" style="border-radius: 15px;background: #ffffff54;">
         
@@ -20,14 +87,14 @@
             <section aria-labelledby="information-heading" class="mt-2">
               
     
-              <p id="question" style="margin-bottom: 20px;" class="text-2xl text-gray-900"></p>
+              <p id="question1" style="margin-bottom: 20px;" class="text-2xl text-gray-900"></p>
 
-              <div id="flop" style="display: flex;" class="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg  sm:col-span-4 lg:col-span-5">
+              <div id="flop1" style="display: flex;" class="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg  sm:col-span-4 lg:col-span-5">
                 <img src="" width="100" height="300">
                 <img src="" width="100" height="300">
                 <img src="" width="100" height="300">
               </div>
-              <div id="mao" style="display: flex;" class="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg  sm:col-span-4 lg:col-span-5">
+              <div id="mao1" style="display: flex;" class="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg  sm:col-span-4 lg:col-span-5">
                 <img src="" width="100" height="300">
                 <img src="" width="100" height="300">
                 <img src="" width="100" height="300">
@@ -46,7 +113,7 @@
                   </div>
     
                   <fieldset class="mt-4">
-                    <div id="options" class="grid grid-cols-4 gap-4">
+                    <div id="options1" class="grid grid-cols-4 gap-4">
                       <button onclick="responder(0)" class="group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 cursor-pointer bg-white text-gray-900 shadow-sm">Add to bag1</button>
                       <button onclick="responder(1)" class="group relative flex items-center justify-center rounded-md border py-3 px-4 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 cursor-pointer bg-white text-gray-900 shadow-sm">Add to bag1</button>
                     </div>
