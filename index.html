@@ -150,6 +150,61 @@
     .mt-10 {
       margin-top: 1.5rem;
     }
+    .grid-container {
+  display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    min-width: 385px;
+    max-width: 385px;
+    min-height: 735px;
+    max-height: 735px;
+    border: 20px solid brown;
+    border-radius: 204px;
+    background: darkgreen;
+}
+
+#linha {
+    padding: 10px;
+    width: 18%;
+    height: 73%;
+    border: 1px solid white;
+    border-radius: 204px;
+    background: transparent;
+    position: absolute;
+    min-width: 345px;
+    max-width: 345px;
+}
+ 
+.grid-item {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://img.freepik.com/vetores-premium/ilustracao-em-vetor-de-logotipo-de-mascote-de-streamer-de-jogador_382438-609.jpg");
+    background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
   </style>
   <script src="quiz.js"></script>
 </body>
