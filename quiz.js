@@ -72,7 +72,6 @@ function responder(opcao) {
       feedback.style.padding = "10px"; 
       feedback.style.borderRadius = "5px"; 
       feedback.style.color = "white";
-      feedback2.style.color = 'gray';
       document.getElementById('feedback').style.display = 'block';
       document.getElementById('feedback1').style.display = 'none';
       document.getElementById('feedback2').style.display = 'block';
