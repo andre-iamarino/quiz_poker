@@ -89,7 +89,6 @@ function responder(opcao) {
       document.getElementById('feedback1').style.display = 'grid';
       document.getElementById('feedback2').style.display = 'grid';
     }
-    document.getElementById('labelInfomativo').style.display = 'none';
     document.getElementById('next').style.display = 'grid';
     document.getElementById('options').style.display = 'none';
 }
