@@ -63,7 +63,7 @@ const cards = {
 const perguntas = [
   {
     pergunta: 
-      ["Situação 1: Hero open CO, BB paga.",
+      ["Situação 1: Hero open CO, BB ",
       "Situação 2: Hero open CO, SB paga, BB paga.",
       "Situação 3: Hero open CO, BTN paga, BB paga."],
     flop: 
