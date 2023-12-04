@@ -121,6 +121,9 @@ function exibirPergunta() {
 
   const questao = perguntas[perguntaAtual];
   const perguntasHTML = document.getElementById('question').getElementsByTagName('p');
+  
+  console.log("PASSOU " + questao.pergunta[situacao]);
+  
   perguntasHTML[0].textContent = questao.pergunta[situacao];
  
   const flopImgHTML = document.getElementById('flop').getElementsByTagName('img');
