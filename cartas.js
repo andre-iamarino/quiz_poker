@@ -1,4 +1,4 @@
-const cards = {
+window.cards = {
     copas: 
       ['assets/baralho/1/back.png',
       'assets/baralho/1/Ah.png',

@@ -1,6 +1,5 @@
-import cards from './cartas.js';
 
-const perguntas = [
+window.perguntas = [
     {
       pergunta: 
         ["Situação 1: Hero open CO, BB paga.",

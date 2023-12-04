@@ -1,7 +1,4 @@
 
-import cards from './cartas.js';
-import perguntas from './perguntas.js';
-
 function embaralharPerguntas() {
   for (let i = perguntas.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
