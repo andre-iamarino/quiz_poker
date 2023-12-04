@@ -61,5 +61,3 @@ window.cards = {
       'assets/baralho/1/Kd.png']
   }
   ;
-  
-  export default cards;

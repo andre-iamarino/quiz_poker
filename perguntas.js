@@ -43,5 +43,3 @@ window.perguntas = [
         ['Podemos cbetar HU por ter o blocker do straight (TT) e o 7 que bloqueia 2 pares. No turn, mandamos mais 1 na dobra do 7, no 6, no 9 e J.']
     }
   ];
-
-export default perguntas;
