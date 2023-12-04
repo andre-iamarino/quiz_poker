@@ -20,6 +20,7 @@ function exibirPergunta() {
  
   const flopImgHTML = document.getElementById('flop').getElementsByTagName('img');
   for (let i = 0; i < flopImgHTML.length; i++) {
+    console.log("bora " + questao.flop[i]);
     flopImgHTML[i].src = questao.flop[i];
   }
   const maoImgHTML = document.getElementById('mao').getElementsByTagName('img');
