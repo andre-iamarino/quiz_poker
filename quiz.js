@@ -60,10 +60,11 @@ const cards = {
     'assets/baralho/1/Qd.png',
     'assets/baralho/1/Kd.png']
 }
+
 const perguntas = [
   {
     pergunta: 
-      ["Situação 1: Hero open CO, BB ",
+      ["Situação 1: Hero open CO, BB paga.",
       "Situação 2: Hero open CO, SB paga, BB paga.",
       "Situação 3: Hero open CO, BTN paga, BB paga."],
     flop: 
@@ -111,7 +112,7 @@ function embaralharPerguntas() {
     [perguntas[i], perguntas[j]] = [perguntas[j], perguntas[i]];
   }
 }
-
+  
 let perguntaAtual = 0;
 let pontuacao = 0;
 let situacao = 0;
@@ -120,10 +121,12 @@ let totalRespondidas = 0;
 function exibirPergunta() {
 
   const questao = perguntas[perguntaAtual];
+  
+  // const perguntasHTML = document.getElementById('question').getElementsByTagName('p');
+  // for (let i = 0; i < perguntasHTML.length; i++) {
+  //   perguntasHTML[i].textContent = questao.pergunta[i];
+  // }
   const perguntasHTML = document.getElementById('question').getElementsByTagName('p');
-  
-  console.log("PASSOU " + questao.pergunta[situacao]);
-  
   perguntasHTML[0].textContent = questao.pergunta[situacao];
  
   const flopImgHTML = document.getElementById('flop').getElementsByTagName('img');
@@ -213,7 +216,6 @@ function proximaQuestao() {
       document.getElementById('feedback1').style.display = 'none';
       document.getElementById('feedback2').style.display = 'none';
       document.getElementById('next').style.display = 'none';
-      // document.getElementById('options').style.display = 'block';
       document.getElementById('options').style.display = 'grid';
       document.getElementById('labelInfomativo').style.display = 'block';
     } else {
@@ -227,5 +229,3 @@ function proximaQuestao() {
 
 embaralharPerguntas();
 exibirPergunta();
-
-
