@@ -68,7 +68,7 @@ const perguntas = [
       "Situação 2: Hero open CO, SB paga, BB paga.",
       "Situação 3: Hero open CO, BTN paga, BB paga."],
     flop: 
-      [cards.copas[13],cards.ouros[8],cards.copas[7]],
+      [cards.copas[13],cards.ouros[8],cards.copas[7],cards.ouros[8],cards.copas[7]],
     mao: 
       [cards.copas[1],cards.paus[13],cards.espadas[3],cards.copas[3],cards.paus[2]],
     opcoes: ['BET', 'CHECK','FUJA'],
@@ -132,6 +132,10 @@ function exibirPergunta() {
   const flopImgHTML = document.getElementById('flop').getElementsByTagName('img');
   for (let i = 0; i < flopImgHTML.length; i++) {
     flopImgHTML[i].src = questao.flop[i];
+    if (questao.flop[i] === undefined) {
+      flopImgHTML[i].style.display = 'none'
+    }
+
   }
   const maoImgHTML = document.getElementById('mao').getElementsByTagName('img');
   for (let i = 0; i < maoImgHTML.length; i++) {
@@ -162,17 +166,17 @@ function responder(opcao) {
       feedback.style.padding = "10px"; 
       feedback.style.borderRadius = "5px"; 
       feedback.style.color = "white";
-      // feedback2.style.color = 'gray';
       document.getElementById('feedback').style.display = 'block';
       document.getElementById('feedback1').style.display = 'none';
       document.getElementById('feedback2').style.display = 'block';
       pontuacao++;
       totalRespondidas++;
     } else {
+      tremerMesa();
       feedback.textContent = `Resposta errada!`;
       feedback1.textContent = `Alternativa correta: ${questao.opcoes[questao.respostaCorreta]}.`;
       feedback2.textContent = `${questao.explicacao[situacao]}`;
-      feedback.style.background = "#ff000085";
+      feedback.style.background = "red";
       feedback.style.padding = "10px";
       feedback.style.borderRadius = "5px"; 
       feedback.style.color = "white";
@@ -181,7 +185,7 @@ function responder(opcao) {
       document.getElementById('feedback2').style.display = 'block';
       totalRespondidas++;
     }
-    document.getElementById('labelInfomativo').style.display = 'none';
+    // document.getElementById('labelInfomativo').style.display = 'none';
     document.getElementById('next').style.display = 'block';
     document.getElementById('options').style.display = 'none';
 }
@@ -201,8 +205,8 @@ function proximaQuestao() {
     document.getElementById('feedback2').style.display = 'none';
     document.getElementById('next').style.display = 'none';
     // document.getElementById('options').style.display = 'block';
-    document.getElementById('options').style.display = 'grid';
-    document.getElementById('labelInfomativo').style.display = 'block';
+    document.getElementById('options').style.display = 'flex';
+    // document.getElementById('labelInfomativo').style.display = 'block';
     
   } else {
     perguntaAtual++;
@@ -216,8 +220,8 @@ function proximaQuestao() {
       document.getElementById('feedback1').style.display = 'none';
       document.getElementById('feedback2').style.display = 'none';
       document.getElementById('next').style.display = 'none';
-      document.getElementById('options').style.display = 'grid';
-      document.getElementById('labelInfomativo').style.display = 'block';
+      document.getElementById('options').style.display = 'flex';
+      // document.getElementById('labelInfomativo').style.display = 'block';
     } else {
       const quiz = document.getElementById('quiz');
       quiz.innerHTML = `<div style="background: #000000d1;width: auto;font-size: 45px;padding: 25px;margin-top: 18%;margin-left: auto;margin-right: auto;width: 39%;border-radius: 13px;font-weight: 800;color: white;"><h2>Acabou mane!</h2>
@@ -225,6 +229,18 @@ function proximaQuestao() {
     }
   }
   
+}
+
+function tremerMesa() {
+  const mesa = document.querySelector('.mesa');
+  mesa.style.border = '15px solid red';
+  mesa.style.animation = 'tremer 0.8s ease-in-out';
+  // Remover a animação após completar
+  mesa.addEventListener('animationend', () => {
+    mesa.style.border = '15px solid  #9e9e9e';  
+    mesa.style.animation = '';
+    mesa.style.transition = 'border-color 2s ease'; 
+  });
 }
 
 embaralharPerguntas();
